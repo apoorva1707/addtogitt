@@ -15,6 +15,7 @@ public class Author {
 
     private Long id;
     private String name;
+    private String aid;
     @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     @JoinColumn(name = "zipcode_id")
     private ZipCode zipCode;
